@@ -1,0 +1,22 @@
+{
+  "name": "full-stack-on-cloudlare-starter-repo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-package": "npm run build --workspace=@repo/data-ops",
+    "dev-frontend": "npm run dev --workspace=user-application",
+    "dev-data-service": "npm run dev --workspace=data-service"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/data-ops",
+    "apps/data-service",
+	"apps/user-application"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.15.19",
+    "typescript": "^5.9.2"
+  }
+}
