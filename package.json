@@ -1,11 +1,11 @@
 {
-  "name": "full-stack-on-cloudlare-starter-repo",
+  "name": "smartlinks",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build-package": "npm run build --workspace=@repo/data-ops",
-    "dev-frontend": "npm run dev --workspace=user-application",
-    "dev-data-service": "npm run dev --workspace=data-service"
+    "build-package": "npm run build -w @repo/data-ops",
+    "dev-frontend": "npm run dev -w user-application",
+    "dev-data-service": "npm run dev -w data-service"
   },
   "keywords": [],
   "author": "",
