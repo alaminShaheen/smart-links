@@ -19,7 +19,7 @@ export function LinkNameEditor({ linkId, initialName }: LinkNameEditorProps) {
   const nameMutation = useMutation(
     trpc.links.updateLinkName.mutationOptions({
       onSettled: () => {
-        queryClient.invalidateQueries({
+        void queryClient.invalidateQueries({
           queryKey: trpc.links.linkList.queryKey(),
         });
       },

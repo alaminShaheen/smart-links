@@ -35,7 +35,7 @@ export function GeoRoutingToggle({
   const updateDestinationMutation = useMutation(
     trpc.links.updateLinkDestinations.mutationOptions({
       onSuccess: () => {
-        queryClient.invalidateQueries({
+        void queryClient.invalidateQueries({
           queryKey: trpc.links.getLink.queryKey({
             linkId,
           }),
